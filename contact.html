@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+   <meta charset="utf-8">
+    <title>Presentation de l'ordinateur quantique</title>
+    <link rel="stylesheet" media="condition" href="mon_css_special.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    
+  </head>
+
+  <body background="./Images/Matrice.jpg">
+	<header>
+	<img id="Logo_IUT" src="./Images/LogoIutMontpellier.png" alt="Iut_Montpellier_logo">
+		<nav>
+			<div id="accueil">
+				<a href="./Presentation.html">Accueil</a>
+				<div class="submenu">
+					<ul class="Themes">
+						<li><a href="./Presentation.html">Présentation ordinateur quantique</a></li>
+						<li><a href="./Presentation.html#Acteurs">Acteurs</a></li>
+					</ul>
+				</div>
+			</div>
+		  
+		<div><a>Les Avantages et Inconvénients </a>
+			<div class="submenu">
+				<ul class="Themes">
+					<li><a href="./Avantages.html">Avantages</a>
+						<ul class="submenuBis">
+							<li><a href="./Avantages.html#IA">Intelligence artificielle</a></li>
+							<li><a href="./Avantages.html#Cybersec">Cybersécurité</a></li>
+							<li><a href="./Avantages.html#Finance">Finance</a></li>
+							<li><a href="./Avantages.html#Sante">Santé</a></li>
+							<li><a href="./Avantages.html#Meteo">Meteo</a></li>
+							<li><a href="./Avantages.html#Energies">Energies</a></li>
+						</ul>
+					</li>	
+					<li><a href="./Inconvénients.html">Inconvénients</a>
+						<ul class="submenuBis">
+							<li><a href="./Inconvénients.html#Cybersec">Cybersécurité</a></li>
+							<li><a href="./Inconvénients.html#Materiaux">Matériaux de fabrication</a></li>
+							<li><a href="./Inconvénients.html#Condition"> Condition d'utilisation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		  <div><a href="./Controverse.html">Analyse de la controverse</a>
+		  	<div class="submenu">
+		  		<ul class="Themes">
+		  			<li><a href="./Controverse.html#Poli">Politique</a></li>
+						<li><a href="./Controverse.html#Éco">Économique</a></li>
+						<li><a href="./Controverse.html#Socio">Sociologique</a></li>
+						<li><a href="./Controverse.html#Techno">Technologique</a></li>
+						<li><a href="./Controverse.html#Enviro">Environnemental</a></li>
+						<li><a href="./Controverse.html#Légal">Légal</a></li>
+					</ul>
+				</div>
+
+		  </div>
+		  
+		</nav>
+		<nav id="burger">
+			<img id="burger" src="./images/burger.png" alt="burger">
+			<div id="menuContent">
+			<div>
+				<div>
+					<a href="./Presentation.html">Accueil</a>
+					<a href="./Inconvénients.html">Inconvénients</a>
+					<a href="./Avantages.html">Avantages</a>
+				</div>
+			  <div>
+				<a href="./Controverse.html">Controverse</a>
+			  </div>
+			</div>
+			</div>
+		</nav>
+  </header>
+  
+  
+    <main>
+	<article id="ContactPage">
+      <h2> Nous contacter </h2>
+	  
+	  <h4 class="formulaire">Vos informations</h4>
+	  
+      <form action="" method="get">
+		<label for="surname">Nom</label><br>
+		<input id="surname" name="nom" type="text" required><br>
+		
+		<label for="firstname">Prénom</label><br>
+		<input id="firstname" name="prénom" type="text" required><br>
+		
+		<label for="email">Email</label><br>
+		<input id="email" type="email" name="email" required><br>
+		
+		<label for="code_postal">Code Postal</label><br>
+		<input id="code_postal" type="number" name="code_postal" required><br>		
+		
+		<label for="Pays d'origine">Pays :</label>
+		<select name="Pays d'origine" id="Pays">
+			<option value="fr">France</option>
+			<option value="eng">Angleterre</option>
+			<option value="esp">Espagne</option>
+			<option value="ita">Italie</option>
+			<option value="ger">Allemagne</option>
+			<option value="oth">Autre</option>
+		</select><br> 
+	
+	<h4 class="formulaire">Vous avez entendu parlé de nous via ?</h4>
+	
+		<label for="découverte">Via :</label><br>
+		<input id="découvertet" type="radio" name="découverte">
+		<label for="découverte">Une connaissance</label><br>
+		<input id="découvertet" type="radio" name="découverte">
+		<label for="découverte">Des recherches sur le web</label><br>
+		<input id="découvertet" type="radio" name="découverte">
+		<label for="découverte">Une annonce</label><br>
+		<input id="découvertet" type="radio" name="découverte">
+		<label for="découverte">Le hasard</label><br>
+
+	
+	<h4 class="formulaire">Date à laquelle vous souhaitez être recontacté</h4>
+	
+		<label for="date">Date de contact :</label><br>
+		<input id="date" type="date" name="date de contact" required>
+	
+	<h4 class="formulaire">Autre commentaire ?</h4>
+	
+	 <label for="commentaire">Commentaire :</label><br>
+		<textarea id="commentaire" name="commentaire" rows="10" cols="50">
+		</textarea> <<br>
+
+	
+	<h4 class="formulaire">Envoyer</h4>
+	
+
+		<input type="submit" value="Envoyer" id="envoyer">
+	</form>
+	  </article>
+	  
+	  <a href="#Logo_IUT"><img id="retour_haut_de_page" src="./Images/fleche_haut.png" alt="retour_au_debut"></a>
+    
+	<footer>
+		<div><a href="./contact.html">Contact</a></div>
+		
+		<img id="LogoBIS" src="./Images/LogoBis.png" alt="Iut_Montpellier_logo_Bis">
+	</footer>
+	</main>
+  </body>
+
+</html>
+

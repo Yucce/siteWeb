@@ -1,0 +1,332 @@
+h2{
+	display:flex;
+	justify-content:center;
+	background-color: #a6d81c;
+    padding: 25px;
+	font-size: 2.5vw;
+	line-height: 26pt;
+}
+
+h3 {
+	display:flex;
+	justify-content:center;
+	color: #a6d81c;
+	padding:1%;
+	font-size: 2vw;
+}
+
+h4{
+	display:flex;
+	justify-content:center;
+	color: #a6d81c;
+	padding:1%;
+	font-size: 1vw;
+}
+
+body {
+    width: 100%;
+    line-height: 150%;
+    text-indent: 5px;
+	background-attachment: fixed;
+	font-family: Verdana;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+
+.Debut_para {
+	font-size:150%;
+    font-weight:bold;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: black;
+    display:flex;
+    justify-content: center;
+	font-weight:bold;
+	font-size:1.5vw;
+}
+
+
+nav > div:nth-child(n+2) > a {
+    border-left: 2px solid black;
+	margin: 10px 0 0 0;
+}
+
+nav > div:first-child > a {
+	margin: 10px 0 0 0;
+}
+
+a:hover {
+    color: white;
+}
+
+p {
+    padding: 30px 0;
+    clear: right;
+	font-size: 0.5vw;
+}
+
+nav {
+	width:100%;
+	height:45px;
+    display:flex;
+}
+nav div:hover{
+	background-color: #068cce;
+}
+
+nav div:hover .submenu {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin: -10px 0 0 0;
+}
+
+.submenu{
+	position:relative;
+	top:13px;
+	left:0px;
+	background-color:#068cce;
+	width:100%;
+	display:none;
+}
+
+nav > div {
+    position: relative;
+    width: 100%;
+	display:block;
+}
+
+.submenuBis{
+	position:relative;
+	top:13px;
+	background-color:#068cce;
+	width:100%;
+	margin:0px 0px 15px 0px;
+	display:none;
+}
+
+ul:hover .submenuBis {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+header {
+	background-color:white;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+	margin:-10px;
+}
+
+
+main > article {
+    display:flex;
+	background-color: #787878;
+    flex-direction: column;
+}
+
+article {
+	width: 80%;
+	margin:10px;
+	padding:0 2% 0% 2%;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+	align-items:center;
+}
+
+.Themes > li a:visited{
+	color:black;
+}
+
+.Themes > li a:hover{
+	color:white;
+}
+
+.Themes > li a{
+	color:black;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#Intro{
+	margin-bottom:0;
+}
+
+.Themes{
+	color:black
+	font-size:20px;
+	list-style-type: "- ";
+}
+
+hr{
+	height: 2px;
+	background-color:white; 
+	width: 80%;
+	border: none;
+}
+
+#Logo_IUT{
+	display:flex;
+    width: 300px;
+	justify-content:flex-start;
+}
+#retour_haut_de_page{
+	display:flex;
+	width: 4vw;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding:0px 10px;
+  align-items : center;
+  font-size:1vw;
+}
+
+footer{
+	text-align:center;
+	font-size:35px;
+	padding:1% 1% 1% 1%;
+	margin:-10px 0 -10px 0;
+	background-color:white;
+	width:82%;
+}
+
+footer a:hover{
+	color:#068cce;
+}
+
+footer a{
+	color:black;
+}
+
+#LogoBIS{
+	float:right;
+	width:5%;
+}
+
+#imgCapa{
+	margin:-5% 30% 3% 30%;
+	width:35%;
+	display:flex;
+}
+
+#imgCapaTxt{
+	text-align:center;
+}
+
+form{
+	font-size:20px;
+}
+
+#ContactPage{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+#ContactPage h2{
+	display:flex;
+	justify-content:center;
+	font-size:50px;
+	background-color: #a6d81c;
+    font-family: ChunkFive;
+    padding: 25px;
+	width:100%;
+}
+@media(min-width: 3500px){
+	p,a,h4{
+		font-size:0.3vw;
+	}
+	h2{
+		padding: 1vw;
+	}
+	nav{
+		padding:50px;
+	}
+	.submenu{
+		top:60px;
+	}
+	h3{
+		font-size:0.75vw;
+	}
+}
+
+
+#burger{
+  position:absolute;
+  right:5px;
+  height:45px;
+  display:none;
+}
+
+@media(max-width:500px){
+  #burger{
+    display:block;
+  }
+  nav#pc{
+	display:none;
+  }
+  nav{
+	  background-color: none;
+  }
+  #menuContent{
+    display:none;
+    position:absolute;
+    background-color:#068cce;
+    top:45px;
+    right:0px;
+    flex-direction:column;
+    height:auto;
+  }
+
+  #burger:hover + #menuContent, #menuContent:hover{
+    display:flex;
+  }
+
+  #menuContent ul{
+    padding:0 !important;
+    margin:0 0 10px 0 !important;
+    display:block;
+    position:static;
+    background-color:transparent;
+  }
+
+  #menuContent > div{
+    display:flex;
+    flex-direction:column;
+  }
+  #menuContent > div > a{
+    text-decoration: underline;
+  }
+  	p,a,h4{
+		font-size:2vw;
+	}
+	#retour_haut_de_page{
+		width:35px;
+	}
+}
+#Refroidisseur{
+	margin:-5% 30% 3% 30%;
+	width:55%;
+	display:flex;
+}
+
+#pile_ou_face,#labyrinthe{
+	width:35%;
+	display:flex;
+	margin:0% 30% 0% 30%;
+}
